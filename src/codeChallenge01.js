@@ -30,3 +30,11 @@ export function makeStrings(arr) {
         } return arr.name + " is under age!!";
     })
 }
+
+export function readyToPutInTheDOM(arr){
+  return arr.map((item) => {
+      const pName = item.name;
+      const pAge = item.age;
+      return `<h1>${pName}</h1><h2>${pAge}</h2>`;
+  })
+}
