@@ -78,7 +78,7 @@ test('alphabetical', () => {
   expect(output).toEqual(['by', 'dog', 'eaten', 'family', 'wolf']);
 })
 
-test.skip('byAge', () => {
+test('byAge', () => {
   const input = [
     { name: 'Quiet Samurai', age: 22 },
     { name: 'Arrogant Ambassador', age: 100 },
