@@ -29,3 +29,16 @@ export function leastToGreatest(arr) {
 export function greatestToLeast(arr) {
     return arr.sort((a, b) => b - a);
 }
+
+// export function lengthSort(arr) {
+//     return arr.sort(())
+// }
+
+export function alphabetical(arr) {
+    return arr.sort((a, b) => a - b);
+}
+
+// export function byAge(arr) {
+//     return arr.sort(())
+// }
+

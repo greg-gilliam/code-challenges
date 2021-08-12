@@ -1,4 +1,4 @@
-import { fiveAndGreaterOnly, evensOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge, leastToGreatest, greatestToLeast } from './codeChallenge02.js';
+import { fiveAndGreaterOnly, evensOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge, leastToGreatest, greatestToLeast, lengthSort, alphabetical, byAge } from './codeChallenge02.js';
 
 test('Five and greater only', () => {
   const input = [3, 6, 8, 2]; // arrange
@@ -62,4 +62,35 @@ test('greatestToLeast', () => {
 
   const output = greatestToLeast(input);
   expect(output).toEqual([90, 20, 5, 3, 2, 1]);
+})
+
+test.skip('lengthSort', () => {
+  const input = ['dog', 'wolf', 'by', 'family', 'eaten'];
+
+  const output = lengthSort(input);
+  expect(output).toEqual(['by', 'dog', 'wolf', 'eaten', 'family']);
+})
+
+test.skip('alphabetical', () => {
+  const input = ['dog', 'wolf', 'by', 'family', 'eaten'];
+
+  const output = alphabetical(input);
+  expect(output).toEqual(['by', 'dog', 'eaten', 'family', 'wolf']);
+})
+
+test.skip('byAge', () => {
+  const input = [
+    { name: 'Quiet Samurai', age: 22 },
+    { name: 'Arrogant Ambassador', age: 100 },
+    { name: 'Misunderstood Observer', age: 2 },
+    { name: 'Unlucky Swami', age: 77 }
+  ];
+
+  const output = byAge(input);
+  expect(output).toEqual([
+    { name: 'Misunderstood Observer', age: 2 },
+    { name: 'Quiet Samurai', age: 22 },
+    { name: 'Unlucky Swami', age: 77 },
+    { name: 'Arrogant Ambassador', age: 100 }
+  ]);
 })
