@@ -64,14 +64,14 @@ test('greatestToLeast', () => {
   expect(output).toEqual([90, 20, 5, 3, 2, 1]);
 })
 
-test.skip('lengthSort', () => {
+test('lengthSort', () => {
   const input = ['dog', 'wolf', 'by', 'family', 'eaten'];
 
   const output = lengthSort(input);
   expect(output).toEqual(['by', 'dog', 'wolf', 'eaten', 'family']);
 })
 
-test.skip('alphabetical', () => {
+test('alphabetical', () => {
   const input = ['dog', 'wolf', 'by', 'family', 'eaten'];
 
   const output = alphabetical(input);
