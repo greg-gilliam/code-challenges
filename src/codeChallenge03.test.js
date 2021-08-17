@@ -6,7 +6,7 @@ test('sorted keys', () => {
     expect(output).toEqual(['age', 'name', 'isDog', 'friends']);
 });
 
-test.skip('getFilteredKey', () => {
+test('getFilteredKey', () => {
     const input = { name: 'Angelina Jolie', isSpot: false, age: 80, };
     const output = getFilteredKey(input);
     expect(output).toEqual(['age']);
