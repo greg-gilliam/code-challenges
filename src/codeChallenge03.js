@@ -3,9 +3,14 @@ export function sortedKeys(obj) {
 }
 
 // export function getFilteredKey(obj) {
-//     return Object.
+//     return Object.keys(obj).filter((obj))
 // }
 
 export function getArrayOfKeysAndValues(obj){
     return Object.entries(obj);
 };
+
+export function sortedArraysByValuesLength(obj) {
+    return Object.entries(obj).sort((a, b) => b[1].length - a[1].length);
+};
+
