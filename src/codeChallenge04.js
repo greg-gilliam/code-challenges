@@ -5,3 +5,6 @@ export function getHouses(obj) {
 export function updateNumbers(obj) {
     return Object.entries(obj).map(obj => obj[0] + ": " + obj[1]);
 };
+
+// export function totalCharacters(arr) {
+// }

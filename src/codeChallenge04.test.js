@@ -54,4 +54,8 @@ test('updateNumbers', () => {
     const characters = {'Grace Hopper': '222-303-5938', 'Ada Lovelace': '222-349-9842', 'Alan Turing': '222-853-5933'};
     const output = updateNumbers(characters);
     expect(output).toEqual(['Grace Hopper: 222-303-5938','Ada Lovelace: 222-349-9842','Alan Turing: 222-853-5933']);
-})
+});
+
+// test('totalCharacters', () => {
+//     const characters = characters;
+// })
