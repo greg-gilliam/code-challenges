@@ -1,4 +1,4 @@
-import { getHouses } from './codeChallenge04.js';
+import { getHouses, updateNumbers } from './codeChallenge04.js';
 
 const characters = [
     {
@@ -49,3 +49,9 @@ test('it gets the names of the houses', () => {
   const output = getHouses(characters); //act
   expect(output).toEqual(['Stark', 'Arryn', 'Lannister', 'Targaryen', 'Tyrell', 'Greyjoy', 'Snow']); //assert
 });
+
+test('updateNumbers', () => {
+    const characters = {'Grace Hopper': '222-303-5938', 'Ada Lovelace': '222-349-9842', 'Alan Turing': '222-853-5933'};
+    const output = updateNumbers(characters);
+    expect(output).toEqual(['Grace Hopper: 222-303-5938','Ada Lovelace: 222-349-9842','Alan Turing: 222-853-5933']);
+})
