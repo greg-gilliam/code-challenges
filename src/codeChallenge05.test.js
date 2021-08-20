@@ -1,4 +1,4 @@
-import { howMuchPencil, wordsToCharList } from './codeChallenge05';
+import { howMuchPencil, wordsToCharList, removeLastCharacters } from './codeChallenge05';
 
 test('It should return a list of shortening words', () => {
     expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
@@ -12,4 +12,9 @@ test('wordsToCharList', () => {
   expect(wordsToCharList('Gregor').length).toStrictEqual(6);
   expect(wordsToCharList('')).toStrictEqual([]);
   expect(wordsToCharList('abc')).toStrictEqual(['a','b', 'c']);
+});
+
+test('removeLastCharacters', () => {
+  const output = removeLastCharacters('wowow', -700);
+  expect(output).toEqual('wowow'); 
 });

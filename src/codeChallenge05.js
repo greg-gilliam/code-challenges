@@ -8,4 +8,8 @@ export function howMuchPencil(str) {
 
 export function wordsToCharList(arr) {
     return Array.from(arr);
-}
+};
+
+export function removeLastCharacters(str, numberOfCharacters){
+    return str.substring(0, str.length -numberOfCharacters)
+  };
