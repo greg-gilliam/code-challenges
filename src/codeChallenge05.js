@@ -5,3 +5,7 @@ export function howMuchPencil(str) {
     }
     return arr;
 };
+
+export function wordsToCharList(arr) {
+    return Array.from(arr);
+}

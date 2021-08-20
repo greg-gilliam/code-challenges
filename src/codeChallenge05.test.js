@@ -1,4 +1,4 @@
-import { howMuchPencil } from './codeChallenge05';
+import { howMuchPencil, wordsToCharList } from './codeChallenge05';
 
 test('It should return a list of shortening words', () => {
     expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
@@ -6,3 +6,10 @@ test('It should return a list of shortening words', () => {
     expect(howMuchPencil('')).toStrictEqual(['']);
     expect(howMuchPencil('abc')).toStrictEqual(['abc', 'bc', 'c', '']);
   });
+
+test('wordsToCharList', () => {
+  expect(wordsToCharList('Gregor')).toStrictEqual(['G', 'r', 'e', 'g', 'o', 'r']);
+  expect(wordsToCharList('Gregor').length).toStrictEqual(6);
+  expect(wordsToCharList('')).toStrictEqual([]);
+  expect(wordsToCharList('abc')).toStrictEqual(['a','b', 'c']);
+});
