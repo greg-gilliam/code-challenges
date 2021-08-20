@@ -1,6 +1,6 @@
-import { howMuchPencil } from './array-methods';
+import { howMuchPencil } from './codeChallenge05';
 
-test.skip('It should return a list of shortening words', () => {
+test('It should return a list of shortening words', () => {
     expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
     expect(howMuchPencil('Welcome').length).toStrictEqual(8);
     expect(howMuchPencil('')).toStrictEqual(['']);
